@@ -2,9 +2,6 @@
 
 #include "Buest.h"
 
-#include "Misc/Paths.h"
-#include "ShaderCore.h"
-
 #define LOCTEXT_NAMESPACE "FBuestModule"
 
 void FBuestModule::StartupModule()
