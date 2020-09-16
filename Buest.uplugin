@@ -3,14 +3,14 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "Buest",
-	"Description": "Generic graph operations in UE4",
+	"Description": "Self contained UE4 plugin wrapping Boost so other plugins and projects can have a shared dependency on it",
 	"Category": "Other",
-	"CreatedBy": "MESO Digital Interiors GmbH",
-	"CreatedByURL": "https://meso.design",
+	"CreatedBy": "David Morasz",
+	"CreatedByURL": "mcro.de",
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
-	"CanContainContent": true,
+	"CanContainContent": false,
 	"IsBetaVersion": false,
 	"Installed": false,
 	"Modules": [
@@ -18,12 +18,6 @@
 			"Name": "Buest",
 			"Type": "Runtime",
 			"LoadingPhase": "PreLoadingScreen"
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "MESOUSLCPP",
-			"Enabled": true
 		}
 	]
 }
