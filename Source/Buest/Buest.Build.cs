@@ -18,6 +18,7 @@ public class Buest : ModuleRules
 	public Buest(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		bEnableUndefinedIdentifierWarnings = false;
 
 		Bootstrap();
 		BuildBoost(Target);

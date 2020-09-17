@@ -54,6 +54,10 @@ It's just a new line separated list of the name of boost libraries (as seen in t
 
 If Buest doesn't find any explicit library usage, it will only handle includes (all the header-only libraries of Boost).
 
+## Including Boost headers
+
+Enclose boost includes with `#include "BoostIncludeStart.h"` and `#include "BoostIncludeEnd.h"`. These headers make sure to suppress warnings inherently coming from Boost libraries. If you encounter more, feel free to add the warning disabling pragma and create a pull request ;)
+
 ## On Marketplace compatibility
 
 This plugin might violate some patterns Epic has set up for plugins. The result of `Buest.build.cs` script is not pure, it depends on other plugins included with it in a project. Therefore Buest is not suitable to be placed in Engine plugins and it cannot be precompiled. Because of this other plugins depending on Buest might not be publishable to Epic's UE4 Marketplace. However it's not tested, and precompilation might work just fine for dependent plugins, I'm just managing expectations here.
