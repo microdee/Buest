@@ -16,6 +16,11 @@
 
 #endif
 
+#ifdef BUEST_MSVC_GNUC_AVOIDANCE
+//#pragma pop_macro("__GNUC__")
+#define __GNUC__ BUEST_MSVC_GNUC_AVOIDANCE
+#endif
+
 THIRD_PARTY_INCLUDES_END
 
 #undef BOOST_INCLUDE_REGION
