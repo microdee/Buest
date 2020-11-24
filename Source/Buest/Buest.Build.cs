@@ -60,7 +60,7 @@ public class Buest : ModuleRules
 		var boostBootstrap = Process.Start(new ProcessStartInfo
 		{
 			FileName = "cmd.exe",
-			Arguments = "/C " + Path.Combine(BoostRoot(), "bootstrap.bat"),
+			Arguments = "/S /C \" \"" + Path.Combine(BoostRoot(), "bootstrap.bat") + "\" \"",
 			UseShellExecute = false,
 			WorkingDirectory = BoostRoot()
 		});
